@@ -1,0 +1,99 @@
+.swiper {
+    height: 300px;
+    width: 100%;
+    margin: 100px auto;
+    position: relative;
+}
+
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: #666;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    margin: 0 auto;
+    height: 300px;
+    width: 600px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.swiper-wrapper-box {
+    position: absolute;
+    display: flex;
+    height: 300px;
+    width: 100%;
+}
+
+.swiper-item {
+    height: 300px;
+    width: 100%;
+    display: block;
+    flex-shrink: 0;
+}
+
+.banner-1 {
+    background: url(./../img/banner-1.png) no-repeat center center / cover;
+}
+
+.banner-2 {
+    background: url(./../img/banner-2.png) no-repeat center center / cover;
+}
+
+.banner-3 {
+    background: url(./../img/banner-3.png) no-repeat center center / cover;
+}
+
+.arrow-l,
+.arrow-r {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    height: 60px;
+    width: 30px;
+}
+
+.arrow-l {
+    cursor: pointer;
+    left: 250px;
+    background: url(./../img/arrow-l.png) no-repeat center center / contain;
+}
+
+.arrow-r {
+    cursor: pointer;
+    right: 250px;
+    background: url(./../img/arrow-r.png) no-repeat center center / contain;
+}
+
+.icon-box {
+    position: absolute;
+    width: 60px;
+    height: 12px;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+.icon-box-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-item {
+    height: 10px;
+    width: 10px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active {
+    background: #fff;
+}
